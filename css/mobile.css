@@ -1,0 +1,74 @@
+/* mobile-design.jpg 기준 : 375rem (767rem 이하) */
+.components {
+  display: flex;
+  flex-direction: column;
+  max-width: 23.4375rem;
+  margin: 0 auto;
+  padding: 5.625rem 1.5625rem;
+  background-color: var(--veryLightGray);
+}
+
+.component {
+  padding: 3rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.component.Sedans {
+  background-color: var(--brightOrange);
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+.component.SUVs {
+  background-color: var(--darkCyan);
+}
+.component.Luxury {
+  background-color: var(--veryDarkCyan);
+  border-radius: 0 0 0.625rem 0.625rem;
+}
+
+.component h1 {
+  margin: 1.875rem 0;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.component p {
+  margin-top: 0;
+  margin-bottom: 1.5625rem;
+  line-height: 1.5rem;
+}
+
+.component a {
+  width: fit-content;
+  padding: 0.9375rem 2rem;
+  background-color: var(--veryLightGray);
+  border: 0.0625rem solid var(--veryLightGray);
+  border-radius: 10rem;
+}
+
+.component.Sedans a {
+  color: var(--brightOrange);
+}
+.component.SUVs a {
+  color: var(--darkCyan);
+}
+.component.Luxury a {
+  color: var(--veryDarkCyan);
+}
+
+.component a:hover {
+  color: var(--veryLightGray);
+  transition: background-color 200ms linear, color 200ms linear;
+}
+
+.component.Sedans a:hover {
+  background-color: var(--brightOrange);
+}
+.component.SUVs a:hover {
+  background-color: var(--darkCyan);
+}
+.component.Luxury a:hover {
+  background-color: var(--veryDarkCyan);
+}
